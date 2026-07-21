@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Restaurant Lubna — Midden-Oosterse keuken</title>
+<meta name="description" content="Restaurant Lubna — deel onze passie voor de Midden-Oosterse keuken. Verse mazza, gegrilde spiezen en zoete desserts in een warme, sfeervolle setting.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Restaurant Lubna — Midden-Oosterse keuken">
+<meta property="og:description" content="Verse mazza, gegrilde spiezen en zoete desserts. Bekijk de menukaart en reserveer een tafel.">
+<meta name="theme-color" content="#241d12">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="marble">
+
+<input type="checkbox" id="navCheck" class="nav-check">
+<nav class="nav" id="nav">
+  <a href="#top" class="brand"><img class="brand-logo" src="assets/brand.webp" alt="Lubna"></a>
+  <div class="nav-links" id="navLinks">
+    <a href="#top">Home</a>
+    <a href="#over">Over ons</a>
+    <a href="#menukaart">Menukaart</a>
+    <a href="#impressie">Impressie</a>
+    <a href="#reserveren">Contact</a>
+    <a href="#reserveren" class="btn btn-gold">Reserveren</a>
+  </div>
+  <label for="navCheck" class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></label>
+</nav>
+<label for="navCheck" class="nav-scrim" id="navScrim"></label>
+
+<header class="hero" id="top">
+  <div class="veil"></div>
+  <div class="hero-inner">
+    <img class="hero-logo" alt="Restaurant Lubna" src="assets/logo.webp">
+    <p class="lead">Wij delen graag onze passie voor de Midden-Oosterse keuken. Verse ingrediënten, met zorg bereid, om samen te delen en te genieten.</p>
+    <div class="btns">
+      <a href="#menukaart" class="btn btn-gold">Bekijk de menukaart</a>
+      <a href="#reserveer" class="btn btn-outline">Reserveer een tafel</a>
+    </div>
+  </div>
+  <div class="scroll-cue">Scroll</div>
+</header>
+
+<section id="over">
+  <div class="wrap about-grid">
+    <div class="about-copy">
+      <span class="eyebrow">Over Lubna</span>
+      <h2 class="section-title" style="margin-top:12px">Gastvrijheid van<br>het Midden-Oosten</h2>
+      <div class="divider"></div>
+      <p>Bij Lubna draait alles om samen delen. Onze gerechten — van romige mazza tot op houtskool gegrilde spiezen — worden bereid met verse ingrediënten en de warme kruiden van de Levant.</p>
+      <p>Veel van onze gerechten bevatten sesam (tahin), noten of gluten. Heeft u een allergie of een specifieke dieetwens? Meld het gerust aan onze bediening — wij denken graag met u mee, zodat u zorgeloos kunt genieten.</p>
+      <a href="#menukaart" class="btn btn-outline mt-40">Ontdek onze gerechten</a>
+    </div>
+  </div>
+</section>
+
+<section id="gerechten" class="high" style="display:none">
+  <div class="wrap center">
+    <span class="eyebrow">Uit onze keuken</span>
+    <h2 class="section-title" style="margin-top:12px">Specialiteiten van het huis</h2>
+    <div class="divider"></div>
+  </div>
+  <div class="wrap">
+    <div class="dish-grid">
+      <article class="dish"><div class="ph" data-label="Foto volgt"></div><div class="body"><div class="row"><h3>Warme Mazza Mix</h3><span class="price">€35</span></div><p>Vier warme verrassingsmazza — perfect om samen te beginnen.</p></div></article>
+      <article class="dish"><div class="ph" data-label="Foto volgt"></div><div class="body"><div class="row"><h3>Lubna Mix</h3><span class="price">€36,95</span></div><p>Gekruid gehakt, ossenhaas, kipfilet & Nieuw-Zeelandse lamsrack.</p></div></article>
+      <article class="dish"><div class="ph" data-label="Foto volgt"></div><div class="body"><div class="row"><h3>Knafe</h3><span class="price">€10</span></div><p>Zoet gebak van kadaifideeg, gevuld met verse kaas.</p></div></article>
+    </div>
+    <div class="center mt-40"><a href="#menukaart" class="btn btn-gold">Volledige menukaart</a></div>
+  </div>
+</section>
+
+<section id="impressie">
+  <div class="wrap center">
+    <span class="eyebrow">Impressie</span>
+    <h2 class="section-title" style="margin-top:12px">Sfeer proeven</h2>
+    <div class="divider"></div>
+  </div>
+  <div class="wrap">
+    <div class="gal-grid">
+      <div class="ph" data-label="Foto volgt"></div><div class="ph" data-label="Foto volgt"></div><div class="ph" data-label="Foto volgt"></div><div class="ph" data-label="Foto volgt"></div><div class="ph" data-label="Foto volgt"></div><div class="ph" data-label="Foto volgt"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FULL MENU ================= -->
+<div id="menukaart" class="menu-band">
+  <section style="padding-bottom:0">
+    <div class="wrap center">
+      <span class="eyebrow">Drankenkaart & Menu</span>
+      <h2 class="section-title" style="margin-top:12px">Menukaart</h2>
+      <div class="divider"></div>
+      <p style="max-width:560px;margin:20px auto 30px;color:var(--ink-soft)">Onze gerechten bevatten regelmatig sesam (tahin), noten of gluten. Heeft u een allergie of dieetwens? Meld het vooraf aan onze bediening.</p>
+      <div class="catnav">
+        <a href="#salades">Salades</a><a href="#soep">Soep</a><a href="#koude-mazza">Koude mazza</a><a href="#warme-mazza">Warme mazza</a><a href="#hoofd">Hoofdgerechten</a><a href="#vega">Vegetarisch</a><a href="#vis">Vis</a><a href="#kids">Kindermenu</a><a href="#desserts">Desserts</a><a href="#dranken">Dranken</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="salades" class="mcat">
+    <div class="cat-head"><h2>Salades</h2><div class="divider"></div></div>
+    <div class="wrap"><div class="items">
+      <div class="item"><span class="no">01</span><div class="main"><div class="name">Tabouleh</div><div class="desc">Peterseliesalade met bulgur, tomaat, ui, munt, citroen & olijfolie</div></div><span class="price">€8,95</span></div>
+      <div class="item"><span class="no">02</span><div class="main"><div class="name">Fatoush</div><div class="desc">Gemengde tuinsalade met gebakken brood en granaatappeldressing</div></div><span class="price">€9,45</span></div>
+      <div class="item"><span class="no">03</span><div class="main"><div class="name">Salatet Jebneh</div><div class="desc">Salade met witte kaas, tomaat, komkommer, rode ui & olijven</div></div><span class="price">€9,45</span></div>
+      <div class="item"><span class="no">04</span><div class="main"><div class="name">Salatet Falafel</div><div class="desc">Salade met falafel, sla, tomaat, komkommer en sesampastadressing</div></div><span class="price">€9,95</span></div>
+      <div class="item"><span class="no">05</span><div class="main"><div class="name">Salatet Zeitoen</div><div class="desc">Salade van gemarineerde olijven, paprika, tomaat, wortel, knoflook & ui</div></div><span class="price">€8,95</span></div>
+      <div class="item"><span class="no">06</span><div class="main"><div class="name">Salata Armaniye</div><div class="desc">Armeense salade met komkommer, tomaat en lichtpittige dressing</div></div><span class="price">€7,95</span></div>
+      <div class="item"><span class="no">07</span><div class="main"><div class="name">Caesar Salade</div><div class="desc">Sla, kip, croutons, Parmezaanse kaas & Caesar dressing</div></div><span class="price">€5,75</span></div>
+      <div class="item"><span class="no">08</span><div class="main"><div class="name">Jarjir Salade</div><div class="desc">Rucolasalade met rode ui, champignon en cherrytomaten</div></div><span class="price">€7,45</span></div>
+      <div class="item"><span class="no">09</span><div class="main"><div class="name">Saundar Salade</div><div class="desc">Peterselie, knoflook, citroen & maïs</div></div><span class="price">€8,50</span></div>
+    </div></div>
+  </section>
+
+  <section id="soep" class="mcat">
+    <div class="cat-head"><h2>Soep</h2><div class="divider"></div></div>
+    <div class="wrap"><div class="items">
+      <div class="item"><span class="no">10</span><div class="main"><div class="name">Adas</div><div class="desc">Linzensoep bereid met rode linzen en verse kruiden</div></div><span class="price">€8,50</span></div>
+    </div></div>
+  </section>
+
+  <section id="koude-mazza" class="mcat">
+    <div class="cat-head"><h2>Koude mazza</h2><div class="divider"></div></div>
+    <div class="wrap"><div class="items">
+      <div class="item"><span class="no">11</span><div class="main"><div class="name">Hommus</div><div class="desc">Kikkererwtenpuree met tahin, knoflook en olijfolie</div></div><span class="price">€5,95</span></div>
+      <div class="item"><span class="no">12</span><div class="main"><div class="name">Moutabal</div><div class="desc">Gegrilde aubergine, yoghurt, tahin & knoflook</div></div><span class="price">€5,95</span></div>
+      <div class="item"><span class="no">13</span><div class="main"><div class="name">Mouhammara</div><div class="desc">Paprika-walnoot spread met granaatappel & paneermeel</div></div><span class="price">€5,95</span></div>
+      <div class="item"><span class="no">14</span><div class="main"><div class="name">Keshkeh</div><div class="desc">Gedroogde yoghurt met bulgur, paprika, knoflook & ui</div></div><span class="price">€6,25</span></div>
+      <div class="item"><span class="no">15</span><div class="main"><div class="name">Baba Ghanoush</div><div class="desc">Gegrilde aubergine met tahin, knoflook, citroen & granaatappeldressing</div></div><span class="price">€5,95</span></div>
+      <div class="item"><span class="no">16</span><div class="main"><div class="name">Tarator Dajaj</div><div class="desc">Kip, peterselie, augurk, tahin, yoghurt & citroen</div></div><span class="price">€6,45</span></div>
+      <div class="item"><span class="no">17</span><div class="main"><div class="name">Hommus bel Lahmeh</div><div class="desc">Hommus met gekruid ossenhaas & pijnboompitten</div></div><span class="price">€11,95</span></div>
+      <div class="item"><span class="no">18</span><div class="main"><div class="name">Kibbeh Nayeh</div><div class="desc">Rauwe kibbeh met bulgur, vlees, ui en kruiden</div></div><span class="price">€17,45</span></div>
+      <div class="item"><span class="no">19</span><div class="main"><div class="name">Basturma</div><div class="desc">Gedroogd rundvlees met kruiden</div></div><span class="price">€9,45</span></div>
+      <div class="item"><span class="no">20</span><div class="main"><div class="name">Yalanji</div><div class="desc">Druivenbladeren gevuld met rijst, groente & kruiden</div></div><span class="price">€7,45</span></div>
+      <div class="item"><span class="no">21</span><div class="main"><div class="name">Koude Mazza Mix</div><div class="desc">4 koude verrassingsmazza met fatoush</div></div><span class="price">€30,50</span></div>
+    </div></div>
+  </section>
+
+  <section id="warme-mazza" class="mcat">
+    <div class="cat-head"><h2>Warme mazza</h2><div class="divider"></div></div>
+    <div class="wrap"><div class="items">
+      <div class="item"><span class="no">22</span><div class="main"><div class="name">Kras Nahna</div><div class="desc">Vlees, ui, pistache, munt, kruiden & dressing</div></div><span class="price">€10,95</span></div>
+      <div class="item"><span class="no">23</span><div class="main"><div class="name">Chicken Strips</div><div class="desc">Krokante kipfilet met saus</div></div><span class="price">€9,45</span></div>
+      <div class="item"><span class="no">24</span><div class="main"><div class="name">Jibne Haloumi</div><div class="desc">Gefrituurde kaas met granaatappeldressing</div></div><span class="price">€7,95</span></div>
+      <div class="item"><span class="no">25</span><div class="main"><div class="name">Kibbeh Trablousieh <small>4 stuks</small></div><div class="desc">Gefrituurde kibbeh gevuld met vlees & pijnboompitten (groot)</div></div><span class="price">€13,95</span></div>
+      <div class="item"><span class="no">26</span><div class="main"><div class="name">Toshka</div><div class="desc">Arabisch brood, gekruid rundergehakt, witte kaas & granaatappeldressing</div></div><span class="price">€11,95</span></div>
+      <div class="item"><span class="no">27</span><div class="main"><div class="name">Maria</div><div class="desc">Arabisch plat brood gevuld met rundergehakt & granaatappeldressing</div></div><span class="price">€10,95</span></div>
+      <div class="item"><span class="no">28</span><div class="main"><div class="name">Falafel <small>5 stuks</small></div><div class="desc">Kikkererwtenballetjes met tahinsaus</div></div><span class="price">€9,95</span></div>
+      <div class="item"><span class="no">29</span><div class="main"><div class="name">Burak Kaas <small>4 stuks</small></div><div class="desc">Filodeeg gevuld met kaas, sesam</div></div><span class="price">€8,45</span></div>
+      <div class="item"><span class="no">30</span><div class="main"><div class="name">Burak Dejaj <small>4 stuks</small></div><div class="desc">Filodeeg, kipfilet & groenten</div></div><span class="price">€8,45</span></div>
+      <div class="item"><span class="no">31</span><div class="main"><div class="name">Batata Harra</div><div class="desc">Pikante aardappelen met knoflook & licht pittige dressing</div></div><span class="price">€5,95</span></div>
+      <div class="item"><span class="no">32</span><div class="main"><div class="name">Qaliye</div><div class="desc">Mals gestoofde vlees</div></div><span class="price">€12,95</span></div>
+      <div class="item"><span class="no">33</span><div class="main"><div class="name">Kredes</div><div class="desc">Gebakken gamba's, groente & dressing</div></div><span class="price">€11,95</span></div>
+      <div class="item"><span class="no">34</span><div class="main"><div class="name">Ma'ane</div><div class="desc">Gebakken worstjes met granaatappeldressing</div></div><span class="price">€11,95</span></div>
+      <div class="item"><span class="no">35</span><div class="main"><div class="name">Sucuk</div><div class="desc">Pikante worst gebakken met tomaat & ui</div></div><span class="price">€6,25</span></div>
+      <div class="item"><span class="no">36</span><div class="main"><div class="name">Jawaneh</div><div class="desc">Kippenvleugels gemarineerd & gegrild</div></div><span class="price">€9,95</span></div>
+      <div class="item"><span class="no">37</span><div class="main"><div class="name">Kibbeh Mishwieh</div><div class="desc">Gegrilde kibbeh gevuld met vlees & pijnboompitten</div></div><span class="price">€9,95</span></div>
+      <div class="item"><span class="no">38</span><div class="main"><div class="name">Warme Mazza Mix</div><div class="desc">4 warme verrassingsmazza</div></div><span class="price">€35</span></div>
+    </div></div>
+  </section>
+
+  <section id="hoofd" class="mcat">
+    <div class="cat-head"><h2>Hoofdgerechten</h2><div class="cat-note">Alle gerechten worden geserveerd met rijst of friet</div><div class="divider"></div></div>
+    <div class="wrap"><div class="items">
+      <div class="item"><span class="no">39</span><div class="main"><div class="name">Kabab</div><div class="desc">Spiezen gekruid gehakt</div></div><span class="price">€20,95</span></div>
+      <div class="item"><span class="no">40</span><div class="main"><div class="name">Shish Tawoek</div><div class="desc">Spiezen met kipfiletblokjes</div></div><span class="price">€20,95</span></div>
+      <div class="item"><span class="no">41</span><div class="main"><div class="name">Shekaf</div><div class="desc">Spiezen met kalfshaas</div></div><span class="price">€32,95</span></div>
+      <div class="item"><span class="no">42</span><div class="main"><div class="name">Kastalleta's <small>5 stuks</small></div><div class="desc">Nieuw-Zeelands lamsrack</div></div><span class="price">€34,95</span></div>
+      <div class="item"><span class="no">43</span><div class="main"><div class="name">Kabab & Shish Tawoek & Shekaf</div><div class="desc">1 spies gekruid gehakt, 1 spies kipfiletblokjes & 1 spies ossenhaas</div></div><span class="price">€25,95</span></div>
+      <div class="item"><span class="no">44</span><div class="main"><div class="name">Lubna Mix</div><div class="desc">1 spies gekruid gehakt, 1 spies ossenhaas, 1 spies kipfiletblokjes & 1 Nieuw-Zeelandse lamsrack</div></div><span class="price">€36,95</span></div>
+      <div class="item"><span class="no">45</span><div class="main"><div class="name">Kabab & Shish Tawoek</div><div class="desc">1 spies gekruid gehakt & 1 spies kipfiletblokjes</div></div><span class="price">€24,95</span></div>
+      <div class="item"><span class="no">46</span><div class="main"><div class="name">Kebab & Shekaf</div><div class="desc">Spies gekruid gehakt en spies ossenhaas</div></div><span class="price">€24,45</span></div>
+      <div class="item"><span class="no">47</span><div class="main"><div class="name">Shekaf & Shish Tawoek</div><div class="desc">Spies ossenhaas & spies kipfiletblokjes</div></div><span class="price">€24,45</span></div>
+      <div class="item"><span class="no">48</span><div class="main"><div class="name">Kabab Badinjan</div><div class="desc">Gekruid gehakt met aubergine</div></div><span class="price">€20,95</span></div>
+      <div class="item"><span class="no">49</span><div class="main"><div class="name">Farouj Meshwi</div><div class="desc">Op houtskool gegrilde, gemarineerde kip</div></div><span class="price">€18,95</span></div>
+      <div class="item"><span class="no">50</span><div class="main"><div class="name">Steak</div><div class="desc">Malse runderentrecote & groenten</div></div><span class="price">€32,95</span></div>
+      
+    </div></div>
+  </section>
+
+  <section id="vega" class="mcat">
+    <div class="cat-head"><h2>Vegetarische gerechten</h2><div class="divider"></div></div>
+    <div class="wrap"><div class="items">
+      <div class="item"><span class="no">51</span><div class="main"><div class="name">Gegrilde Groenten</div><div class="desc">Seizoensgroenten, perfect gegrild en geserveerd met saus</div></div><span class="price">€15,95</span></div>
+    </div></div>
+  </section>
+
+  <section id="vis" class="mcat">
+    <div class="cat-head"><h2>Visgerechten</h2><div class="divider"></div></div>
+    <div class="wrap"><div class="items">
+      <div class="item"><span class="no">52</span><div class="main"><div class="name">Dorade</div><div class="desc">Op houtskool gegrilde dorade</div></div><span class="price">€25,95</span></div>
+      <div class="item"><span class="no">53</span><div class="main"><div class="name">Black Tiger <small>6 stuks</small></div><div class="desc">King gamba's geserveerd in een wijnsaus</div></div><span class="price">€33</span></div>
+      <div class="item"><span class="no">54</span><div class="main"><div class="name">Zalmfilet</div><div class="desc">Zalmfilet, aardappelpuree en groente</div></div><span class="price">€25,95</span></div>
+    </div></div>
+  </section>
+
+  <section id="kids" class="mcat">
+    <div class="cat-head"><h2>Kindermenu's</h2><div class="cat-note">Alle gerechten worden geserveerd met friet</div><div class="divider"></div></div>
+    <div class="wrap"><div class="items">
+      <div class="item"><span class="no">55</span><div class="main"><div class="name">Lubna Kidsmenu</div><div class="desc">Keuze uit kipnuggets, frikandel of chicken strips</div></div><span class="price">€9,95</span></div>
+      <div class="item"><span class="no">56</span><div class="main"><div class="name">Mini Kabab</div><div class="desc">Kleine spies met rundergehakt</div></div><span class="price">€12,95</span></div>
+      <div class="item"><span class="no">57</span><div class="main"><div class="name">Mini Shish Tawoek</div><div class="desc">Kleine spies met kipfiletblokjes</div></div><span class="price">€12,95</span></div>
+    </div></div>
+  </section>
+
+  <section id="desserts" class="mcat">
+    <div class="cat-head"><h2>Desserts</h2><div class="divider"></div></div>
+    <div class="wrap"><div class="items">
+      <div class="item"><span class="no">58</span><div class="main"><div class="name">Fruitschaal <small>2 personen</small></div><div class="desc">Mix van seizoensfruit</div></div><span class="price">€15</span></div>
+      <div class="item"><span class="no">59</span><div class="main"><div class="name">Lava Cake</div><div class="desc">Warme chocoladecake met een vloeibare chocoladekern</div></div><span class="price">€9</span></div>
+      <div class="item"><span class="no">60</span><div class="main"><div class="name">Halawat Jebneh</div><div class="desc">Zachte, zoete kaasrolletjes met mozzarella en griesmeeldeeg</div></div><span class="price">€10</span></div>
+      <div class="item"><span class="no">61</span><div class="main"><div class="name">Baklava <small>3 stuks</small></div><div class="desc">Zoete filodeeggebakjes, geserveerd met ijs</div></div><span class="price">€10</span></div>
+      <div class="item"><span class="no">62</span><div class="main"><div class="name">Knafe</div><div class="desc">Zoet gebak van kadaifideeg, gevuld met verse kaas</div></div><span class="price">€10</span></div>
+      <div class="item"><span class="no">63</span><div class="main"><div class="name">Baqdash</div><div class="desc">Ambachtelijk schepijs met een unieke textuur & pistachenoten</div></div><span class="price">€8,50</span></div>
+      <div class="item"><span class="no">64</span><div class="main"><div class="name">IJs</div><div class="desc">IJscoupé met verschillende soorten ijs, fruit & slagroom</div></div><span class="price">€7,95</span></div>
+      <div class="item"><span class="no">65</span><div class="main"><div class="name">Schaal Dessert Mix <small>2 personen</small></div><div class="desc">Bevat o.a. 2× lava cake, 2× halawat jebneh & 2× baklava</div></div><span class="price">€7,45</span></div>
+      <div class="item"><span class="no">66</span><div class="main"><div class="name">Sucse</div><div class="desc">Chocoladecake gemaakt van chocola en koek</div></div><span class="price">€30,50</span></div>
+      <div class="item"><span class="no">67</span><div class="main"><div class="name">Lubna Dessert Mix</div><div class="desc">4 verschillende soorten verrassingsdesserts</div></div><span class="price">€29,95</span></div>
+    </div></div>
+  </section>
+
+  <section id="dranken" class="mcat">
+    <div class="cat-head"><h2>Dranken</h2><div class="divider"></div></div>
+    <div class="wrap"><div class="drink-cols">
+      <div class="drink-block"><h3>Frisdranken</h3>
+        <div class="drow"><span class="dn">Cola <small>regular | zero</small></span><span class="dp">€3,60</span></div>
+        <div class="drow"><span class="dn">Sprite</span><span class="dp">€3,60</span></div>
+        <div class="drow"><span class="dn">Fanta Orange</span><span class="dp">€3,60</span></div>
+        <div class="drow"><span class="dn">Fanta Cassis</span><span class="dp">€3,80</span></div>
+        <div class="drow"><span class="dn">Fuze Tea Sparkling</span><span class="dp">€3,60</span></div>
+        <div class="drow"><span class="dn">Fuze Tea Green</span><span class="dp">€3,60</span></div>
+        <div class="drow"><span class="dn">Ginger Ale</span><span class="dp">€3,80</span></div>
+        <div class="drow"><span class="dn">Bitter Lemon</span><span class="dp">€3,50</span></div>
+        <div class="drow"><span class="dn">Tonic</span><span class="dp">€3,50</span></div>
+        <div class="drow"><span class="dn">Rivella</span><span class="dp">€3,90</span></div>
+        <div class="drow"><span class="dn">Appelsap</span><span class="dp">€3,30</span></div>
+        <div class="drow"><span class="dn">Jus d'Orange</span><span class="dp">€3,30</span></div>
+        <div class="drow"><span class="dn">Fristi</span><span class="dp">€3,60</span></div>
+        <div class="drow"><span class="dn">Ranja</span><span class="dp">€3,25</span></div>
+        <div class="drow"><span class="dn">Red Bull <small>regular | zero</small></span><span class="dp">€4,95</span></div>
+      </div>
+      <div class="drink-block"><h3>Water</h3>
+        <div class="drow"><span class="dn">Chaudfontaine 0.2L <small>blauw | rood</small></span><span class="dp">€3,25</span></div>
+        <div class="drow"><span class="dn">Chaudfontaine 1L <small>blauw | rood</small></span><span class="dp">€7,50</span></div>
+        <h3 style="margin-top:26px">Koffie & Thee</h3>
+        <div class="drow"><span class="dn">Koffie</span><span class="dp">€2,95</span></div>
+        <div class="drow"><span class="dn">Espresso</span><span class="dp">€2,50</span></div>
+        <div class="drow"><span class="dn">Cappuccino</span><span class="dp">€3,95</span></div>
+        <div class="drow"><span class="dn">Latte Macchiato</span><span class="dp">€3,95</span></div>
+        <div class="drow"><span class="dn">Thee</span><span class="dp">€2,95</span></div>
+        <div class="drow"><span class="dn">Verse Thee <small>citroen | munt | gember</small></span><span class="dp">€3,95</span></div>
+      </div>
+      <div class="drink-block"><h3>Cocktails</h3>
+        <div class="drow"><span class="dn">Sex on the Beach</span><span class="dp">€14,50</span></div>
+        <div class="drow"><span class="dn">Pornstar Martini <small>classic | strawberry | tiger</small></span><span class="dp">€14,95</span></div>
+        <div class="drow"><span class="dn">Whiskey Sour</span><span class="dp">€14,50</span></div>
+        <div class="drow"><span class="dn">Vodka Sour</span><span class="dp">€14,50</span></div>
+        <div class="drow"><span class="dn">Mojito <small>classic | passion | strawberry</small></span><span class="dp">€14,50</span></div>
+        <div class="drow"><span class="dn">Piña Colada</span><span class="dp">€14,95</span></div>
+        <div class="drow"><span class="dn">Passion Cocktail</span><span class="dp">€14,50</span></div>
+        <div class="drow"><span class="dn">Gin Tonic</span><span class="dp">€12,45</span></div>
+      </div>
+      <div class="drink-block"><h3>Mocktails</h3>
+        <div class="drow"><span class="dn">Mojito <small>classic | passion | strawberry</small></span><span class="dp">€11,45</span></div>
+        <div class="drow"><span class="dn">Blue Moon</span><span class="dp">€11,45</span></div>
+        <div class="drow"><span class="dn">Sunrise</span><span class="dp">€11,45</span></div>
+        <div class="drow"><span class="dn">Lubna Special</span><span class="dp">€11,45</span></div>
+        <div class="drow"><span class="dn">Coco Milkshake</span><span class="dp">€11,45</span></div>
+        <div class="drow"><span class="dn">Piña Colada</span><span class="dp">€11,45</span></div>
+        <div class="drow"><span class="dn">Passion Cocktail</span><span class="dp">€11,45</span></div>
+      </div>
+      <div class="drink-block"><h3>Bier</h3>
+        <div class="drow"><span class="dn">Hertog Jan Pilsener</span><span class="dp">€4,50</span></div>
+        <div class="drow"><span class="dn">Hertog Jan Weizener</span><span class="dp">€6,25</span></div>
+        <div class="drow"><span class="dn">Leffe Blond</span><span class="dp">€6,50</span></div>
+        <div class="drow"><span class="dn">Tripel Karmeliet</span><span class="dp">€7,25</span></div>
+        <div class="drow"><span class="dn">Almaza Bier</span><span class="dp">€4,95</span></div>
+      </div>
+      <div class="drink-block"><h3>Wijnen</h3>
+        <div class="gf-head"><span>Glas</span><span>Fles</span></div>
+        <div class="drow"><span class="dn">St. Thomas Wit</span><span class="dp gf"><span>€6,95</span><span>€32,50</span></span></div>
+        <div class="drow"><span class="dn">St. Thomas Rood</span><span class="dp gf"><span>€6,95</span><span>€32,50</span></span></div>
+        <div class="drow"><span class="dn">Château Ksara Wit</span><span class="dp gf"><span>€7,95</span><span>€39,50</span></span></div>
+        <div class="drow"><span class="dn">Château Ksara Rood</span><span class="dp gf"><span>€7,95</span><span>€39,50</span></span></div>
+        <div class="drow"><span class="dn">Massaya Wit</span><span class="dp gf"><span>€8,95</span><span>€44,50</span></span></div>
+        <div class="drow"><span class="dn">Massaya Rood</span><span class="dp gf"><span>€8,95</span><span>€44,50</span></span></div>
+        <div class="drow"><span class="dn">Kefraya Wit</span><span class="dp gf"><span>€8,95</span><span>€45,50</span></span></div>
+        <div class="drow"><span class="dn">Kefraya Rood</span><span class="dp gf"><span>€8,95</span><span>€44,50</span></span></div>
+      </div>
+      <div class="drink-block"><h3>Sterke drank</h3>
+        <div class="gf-head"><span>Glas</span><span>Fles</span></div>
+        <div class="drow"><span class="dn">Rode Wodka</span><span class="dp gf"><span>€7,45</span><span>€49,95</span></span></div>
+        <div class="drow"><span class="dn">Passoã</span><span class="dp gf"><span>€7,45</span><span>€49,94</span></span></div>
+        <div class="drow"><span class="dn">Malibu</span><span class="dp gf"><span>€7,45</span><span>€49,95</span></span></div>
+        <div class="drow"><span class="dn">Bacardi Rum</span><span class="dp gf"><span>€8,45</span><span>€59,95</span></span></div>
+        <div class="drow"><span class="dn">Absolut Vodka</span><span class="dp gf"><span>€3,45</span><span>€64,95</span></span></div>
+        <div class="drow"><span class="dn">Grey Goose Vodka</span><span class="dp gf"><span>€9,45</span><span>€119,95</span></span></div>
+        <div class="drow"><span class="dn">Belvedere Vodka</span><span class="dp gf"><span>€9,45</span><span>€119,95</span></span></div>
+        <div class="drow"><span class="dn">Hennessy Cognac</span><span class="dp gf"><span>€9,95</span><span>€119,95</span></span></div>
+        <div class="drow"><span class="dn">Meukow XO Cognac</span><span class="dp gf"><span>€12,95</span><span>€249,95</span></span></div>
+        <div class="drow"><span class="dn">Moët &amp; Chandon Ice Impérial</span><span class="dp gf"><span>—</span><span>€249,95</span></span></div>
+      </div>
+      <div class="drink-block"><h3>Arak & Raki</h3>
+        <div class="gf-head"><span>Glas</span><span>Fles</span></div>
+        <div class="drow"><span class="dn">Ksarak</span><span class="dp gf"><span>€7,95</span><span>€84,95</span></span></div>
+        <div class="drow"><span class="dn">Yeni Raki</span><span class="dp gf"><span>€7,45</span><span>€69,45</span></span></div>
+        <div class="drow"><span class="dn">Tekirdağ Gold</span><span class="dp gf"><span>€8,95</span><span>€89,50</span></span></div>
+        <div class="drow"><span class="dn">Kefraya</span><span class="dp gf"><span>€6,45</span><span>€64,45</span></span></div>
+        <div class="drow"><span class="dn">Kefraya VIP</span><span class="dp gf"><span>€7,45</span><span>€79,95</span></span></div>
+        <div class="drow"><span class="dn">Massaya</span><span class="dp gf"><span>€9,95</span><span>€109,95</span></span></div>
+        <div class="drow"><span class="dn">Göbek Raki</span><span class="dp gf"><span>€8,50</span><span>€104,95</span></span></div>
+      </div>
+      <div class="drink-block"><h3>Whiskey</h3>
+        <div class="gf-head"><span>Glas</span><span>Fles</span></div>
+        <div class="drow"><span class="dn">Black Label</span><span class="dp gf"><span>€7,95</span><span>€84,95</span></span></div>
+        <div class="drow"><span class="dn">Double Black Label</span><span class="dp gf"><span>€9,95</span><span>€94,95</span></span></div>
+        <div class="drow"><span class="dn">Gold Label</span><span class="dp gf"><span>€9,95</span><span>€114,95</span></span></div>
+        <div class="drow"><span class="dn">Jack Daniel's</span><span class="dp gf"><span>€6,95</span><span>€74,96</span></span></div>
+        <div class="drow"><span class="dn">Chivas Regal 12 years</span><span class="dp gf"><span>€8,95</span><span>€84,95</span></span></div>
+        <div class="drow"><span class="dn">Chivas Regal 18 years</span><span class="dp gf"><span>€14,95</span><span>€199,95</span></span></div>
+        <div class="drow"><span class="dn">Dimple</span><span class="dp gf"><span>€7,95</span><span>€74,95</span></span></div>
+        <div class="drow"><span class="dn">Glenfiddich 12 years</span><span class="dp gf"><span>€9,95</span><span>€104,95</span></span></div>
+        <div class="drow"><span class="dn">Glenfiddich 15 years</span><span class="dp gf"><span>€14,95</span><span>€169,95</span></span></div>
+        <div class="drow"><span class="dn">Beirut</span><span class="dp gf"><span>€8,95</span><span>€89,95</span></span></div>
+      </div>
+      <div class="drink-block"><h3>Shisha</h3>
+        <div class="drow"><span class="dn">Dubbel Appel</span><span class="dp">€24,95</span></div>
+        <div class="drow"><span class="dn">Kauwgom Mint</span><span class="dp">€24,95</span></div>
+        <div class="drow"><span class="dn">Love 66</span><span class="dp">€24,95</span></div>
+        <div class="drow"><span class="dn">Mi Amore</span><span class="dp">€24,95</span></div>
+      </div>
+    </div></div>
+  </section>
+</div>
+
+<section id="reserveren" class="contact">
+  <div class="wrap center">
+    <span class="eyebrow">Contact & Reserveren</span>
+    <h2 class="section-title" style="margin-top:12px">Tot ziens bij Lubna</h2>
+    <div class="divider"></div>
+  </div>
+  <div class="wrap contact-grid">
+    <div>
+      <div class="info-row"><span class="ic">◆</span><div><h4>Adres</h4><p class="ph-note">[ Straat + huisnummer, postcode, plaats — nog invullen ]</p></div></div>
+      <div class="info-row"><span class="ic">◆</span><div><h4>Telefoon</h4><p class="ph-note">[ Telefoonnummer — nog invullen ]</p></div></div>
+      <div class="info-row"><span class="ic">◆</span><div><h4>Volg ons</h4><div class="social"><a href="https://www.instagram.com/restaurant.lubna/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17" cy="7" r="1.15" fill="currentColor" stroke="none"/></svg><span>@restaurant.lubna</span></a><!-- FB hidden for now: <a href="https://facebook.com/restaurantlubna" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.8 3.7-3.8 1.1 0 2.2.2 2.2.2v2.4h-1.2c-1.2 0-1.6.8-1.6 1.5V12h2.7l-.4 2.9h-2.3v7A10 10 0 0 0 22 12z"/></svg><span>Facebook</span></a> --></div></div></div>
+      <table class="hours-table" style="margin-top:26px">
+        <tr><td>Maandag – donderdag</td><td class="ph-note">[ tijden ]</td></tr>
+        <tr><td>Vrijdag – zaterdag</td><td class="ph-note">[ tijden ]</td></tr>
+        <tr><td>Zondag</td><td class="ph-note">[ tijden ]</td></tr>
+      </table>
+    </div>
+    <div class="reserve-box" id="reserveer">
+      <img class="emblem-img" alt="" src="assets/emblem.webp">
+      <h3>Reserveer uw tafel</h3>
+      <p>Voor een gezellig diner of een groter gezelschap — wij ontvangen u graag.</p>
+      <a href="tel:" class="btn btn-gold" style="margin-bottom:12px">Bel om te reserveren</a><br>
+      <span class="ph-note">Reserveringslink of -formulier nog toe te voegen</span>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap footer-grid">
+    <div><div class="brand-lg">LUBNA</div><small>Restaurant · Midden-Oosterse keuken</small></div>
+    <div><h4>Menu</h4><p><a href="#over">Over ons</a></p><p><a href="#menukaart">Menukaart</a></p><p><a href="#dranken">Drankenkaart</a></p><p><a href="#reserveren">Reserveren</a></p></div>
+    <div><h4>Volg ons</h4><div class="social"><a href="https://www.instagram.com/restaurant.lubna/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17" cy="7" r="1.15" fill="currentColor" stroke="none"/></svg><span>@restaurant.lubna</span></a><!-- FB hidden for now: <a href="https://facebook.com/restaurantlubna" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.8 3.7-3.8 1.1 0 2.2.2 2.2.2v2.4h-1.2c-1.2 0-1.6.8-1.6 1.5V12h2.7l-.4 2.9h-2.3v7A10 10 0 0 0 22 12z"/></svg><span>Facebook</span></a> --></div></div>
+  </div>
+  <div class="wrap footer-bottom">
+    <span>© <span id="yr"></span> Restaurant Lubna</span>
+    <span class="placeholder-tag">Prijzen onder voorbehoud · adres & openingstijden nog in te vullen</span>
+  </div>
+</footer>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>
