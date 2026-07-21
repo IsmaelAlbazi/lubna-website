@@ -49,6 +49,7 @@ In Vercel → Project → **Settings → Domains**, add the restaurant's domain 
 
 ## To do (waiting on client)
 
-- Address, phone number, opening hours (placeholders in `index.html` contact section)
-- Food photos → un-hide the "Uit onze keuken" section (`id="gerechten"`, currently `display:none`) and gallery
-- Extra socials (Facebook block is commented out in the contact + footer)
+- **Food photos** → un-hide the "Uit onze keuken" section (`id="gerechten"`, currently `display:none`) and gallery
+- **Facebook link** (block is commented out in the contact + footer — add the URL when found)
+
+Done: address, phone, opening hours, Instagram, TikTok.
