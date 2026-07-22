@@ -346,7 +346,7 @@
     <div>
       <div class="info-row"><span class="ic">◆</span><div><h4>Adres</h4><p><a href="https://www.google.com/maps/search/?api=1&query=Restaurant%20Lubna%2C%20Weerseloseweg%20370%2C%207622%20PT%20Enschede" target="_blank" rel="noopener">Weerseloseweg 370<br>7622 PT Enschede</a></p></div></div>
       <div class="info-row"><span class="ic">◆</span><div><h4>Telefoon</h4><p><a href="tel:+31535746336">053 574 6336</a></p></div></div>
-      <div class="info-row"><span class="ic">◆</span><div><h4>Volg ons</h4><div class="social"><a href="https://www.instagram.com/restaurant.lubna/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17" cy="7" r="1.15" fill="currentColor" stroke="none"/></svg><span>@restaurant.lubna</span></a><a href="https://www.tiktok.com/@restaurant.lubna" target="_blank" rel="noopener" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.5 3c.3 2.1 1.5 3.6 3.5 3.9v2.4c-1.2.1-2.4-.2-3.5-.8v5.9c0 3.3-2.4 5.6-5.5 5.6C7.9 22 5.5 19.6 5.5 16.5c0-3 2.3-5.4 5.3-5.5.3 0 .6 0 .9.1v2.5c-.3-.1-.6-.2-.9-.2-1.6 0-2.8 1.3-2.8 2.9 0 1.6 1.2 2.9 2.8 2.9 1.6 0 2.9-1.2 2.9-3.1V3h2.8z"/></svg><span>restaurant.lubna</span></a><!-- FB hidden for now: <a href="https://facebook.com/restaurantlubna" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.8 3.7-3.8 1.1 0 2.2.2 2.2.2v2.4h-1.2c-1.2 0-1.6.8-1.6 1.5V12h2.7l-.4 2.9h-2.3v7A10 10 0 0 0 22 12z"/></svg><span>Facebook</span></a> --></div></div></div>
+      <div class="info-row"><span class="ic">◆</span><div><h4>Volg ons</h4><div class="social"><a href="https://www.instagram.com/restaurant.lubna/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17" cy="7" r="1.15" fill="currentColor" stroke="none"/></svg><span>@restaurant.lubna</span></a><a href="https://www.tiktok.com/@restaurant.lubna" target="_blank" rel="noopener" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.5 3c.3 2.1 1.5 3.6 3.5 3.9v2.4c-1.2.1-2.4-.2-3.5-.8v5.9c0 3.3-2.4 5.6-5.5 5.6C7.9 22 5.5 19.6 5.5 16.5c0-3 2.3-5.4 5.3-5.5.3 0 .6 0 .9.1v2.5c-.3-.1-.6-.2-.9-.2-1.6 0-2.8 1.3-2.8 2.9 0 1.6 1.2 2.9 2.8 2.9 1.6 0 2.9-1.2 2.9-3.1V3h2.8z"/></svg><span>restaurant.lubna</span></a><a href="https://www.facebook.com/share/1DMfNbfv9W/?mibextid=wwXIfr" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.8 3.7-3.8 1.1 0 2.2.2 2.2.2v2.4h-1.2c-1.2 0-1.6.8-1.6 1.5V12h2.7l-.4 2.9h-2.3v7A10 10 0 0 0 22 12z"/></svg><span>Facebook</span></a></div></div></div>
       <table class="hours-table" style="margin-top:26px">
         <tr><td>Maandag</td><td>Gesloten</td></tr>
         <tr><td>Dinsdag – donderdag</td><td>16:00 – 23:00</td></tr>
@@ -358,9 +358,39 @@
     <div class="reserve-box" id="reserveer">
       <img class="emblem-img" alt="" src="assets/emblem.webp">
       <h3>Reserveer uw tafel</h3>
-      <p>Voor een gezellig diner of een groter gezelschap — wij ontvangen u graag.</p>
-      <a href="tel:+31535746336" class="btn btn-gold" style="margin-bottom:12px">Bel om te reserveren</a><br>
-      <a href="tel:+31535746336" style="color:#d9bd77;letter-spacing:.04em">053 574 6336</a>
+      <p>Vul het formulier in — we bevestigen je reservering zo snel mogelijk.</p>
+      <form id="reserveForm" class="rsv-form" action="/api/reserveren" method="POST" novalidate>
+        <input type="text" name="company" class="rsv-hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <div class="rsv-row">
+          <input type="text" name="naam" placeholder="Naam" required autocomplete="name">
+          <input type="tel" name="telefoon" placeholder="Telefoon" required autocomplete="tel">
+        </div>
+        <input type="email" name="email" placeholder="E-mail" required autocomplete="email">
+        <div class="rsv-row">
+          <input type="date" name="datum" required aria-label="Datum">
+          <input type="time" name="tijd" required aria-label="Tijd">
+        </div>
+        <select name="personen" required aria-label="Aantal personen">
+          <option value="" disabled selected>Aantal personen…</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+        </select>
+        <p class="rsv-note">Meer dan 12 personen? Bel ons even via <a href="tel:+31535746336">053 574 6336</a>.</p>
+        <textarea name="opmerkingen" rows="2" placeholder="Opmerkingen (optioneel)"></textarea>
+        <button type="submit" class="btn btn-gold rsv-submit">Reservering versturen</button>
+        <p class="rsv-status" id="rsvStatus" role="status" aria-live="polite"></p>
+      </form>
+      <p class="rsv-or">of bel <a href="tel:+31535746336">053 574 6336</a></p>
     </div>
   </div>
 </section>
@@ -369,7 +399,7 @@
   <div class="wrap footer-grid">
     <div><div class="brand-lg">LUBNA</div><small>Restaurant · Midden-Oosterse keuken<br>Weerseloseweg 370, 7622 PT Enschede<br><a href="tel:+31535746336">053 574 6336</a></small></div>
     <div><h4>Menu</h4><p><a href="#over">Over ons</a></p><p><a href="#menukaart">Menukaart</a></p><p><a href="#dranken">Drankenkaart</a></p><p><a href="#reserveren">Reserveren</a></p></div>
-    <div><h4>Volg ons</h4><div class="social"><a href="https://www.instagram.com/restaurant.lubna/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17" cy="7" r="1.15" fill="currentColor" stroke="none"/></svg><span>@restaurant.lubna</span></a><a href="https://www.tiktok.com/@restaurant.lubna" target="_blank" rel="noopener" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.5 3c.3 2.1 1.5 3.6 3.5 3.9v2.4c-1.2.1-2.4-.2-3.5-.8v5.9c0 3.3-2.4 5.6-5.5 5.6C7.9 22 5.5 19.6 5.5 16.5c0-3 2.3-5.4 5.3-5.5.3 0 .6 0 .9.1v2.5c-.3-.1-.6-.2-.9-.2-1.6 0-2.8 1.3-2.8 2.9 0 1.6 1.2 2.9 2.8 2.9 1.6 0 2.9-1.2 2.9-3.1V3h2.8z"/></svg><span>restaurant.lubna</span></a><!-- FB hidden for now: <a href="https://facebook.com/restaurantlubna" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.8 3.7-3.8 1.1 0 2.2.2 2.2.2v2.4h-1.2c-1.2 0-1.6.8-1.6 1.5V12h2.7l-.4 2.9h-2.3v7A10 10 0 0 0 22 12z"/></svg><span>Facebook</span></a> --></div></div>
+    <div><h4>Volg ons</h4><div class="social"><a href="https://www.instagram.com/restaurant.lubna/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17" cy="7" r="1.15" fill="currentColor" stroke="none"/></svg><span>@restaurant.lubna</span></a><a href="https://www.tiktok.com/@restaurant.lubna" target="_blank" rel="noopener" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.5 3c.3 2.1 1.5 3.6 3.5 3.9v2.4c-1.2.1-2.4-.2-3.5-.8v5.9c0 3.3-2.4 5.6-5.5 5.6C7.9 22 5.5 19.6 5.5 16.5c0-3 2.3-5.4 5.3-5.5.3 0 .6 0 .9.1v2.5c-.3-.1-.6-.2-.9-.2-1.6 0-2.8 1.3-2.8 2.9 0 1.6 1.2 2.9 2.8 2.9 1.6 0 2.9-1.2 2.9-3.1V3h2.8z"/></svg><span>restaurant.lubna</span></a><a href="https://www.facebook.com/share/1DMfNbfv9W/?mibextid=wwXIfr" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.8 3.7-3.8 1.1 0 2.2.2 2.2.2v2.4h-1.2c-1.2 0-1.6.8-1.6 1.5V12h2.7l-.4 2.9h-2.3v7A10 10 0 0 0 22 12z"/></svg><span>Facebook</span></a></div></div>
   </div>
   <div class="wrap footer-bottom">
     <span>© <span id="yr"></span> Restaurant Lubna</span>

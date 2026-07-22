@@ -74,6 +74,29 @@
         Array.prototype.forEach.call(targets,function(el){ tio.observe(el); });
       }
     }catch(err){}
+    // reservation form
+    var rform=document.getElementById('reserveForm');
+    if(rform){
+      var d=rform.querySelector('input[name=datum]');
+      if(d){ d.min=new Date().toISOString().slice(0,10); }
+      rform.addEventListener('submit',function(e){
+        e.preventDefault();
+        var status=document.getElementById('rsvStatus');
+        var btn=rform.querySelector('.rsv-submit');
+        status.textContent=''; status.className='rsv-status';
+        var data={}; new FormData(rform).forEach(function(v,k){ data[k]=v; });
+        btn.disabled=true; var label=btn.textContent; btn.textContent='Versturen…';
+        fetch('/api/reserveren',{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify(data)})
+          .then(function(r){ return r.json().then(function(j){ return {status:r.status,body:j}; }).catch(function(){ return {status:r.status,body:{ok:r.ok}}; }); })
+          .then(function(res){
+            if(res.body && res.body.ok){ rform.reset(); status.textContent='Bedankt! We bevestigen je reservering zo snel mogelijk.'; status.classList.add('ok'); }
+            else { status.textContent=(res.body && res.body.error) || 'Er ging iets mis. Bel ons gerust via 053 574 6336.'; status.classList.add('err'); }
+          })
+          .catch(function(){ status.textContent='Er ging iets mis. Bel ons gerust via 053 574 6336.'; status.classList.add('err'); })
+          .finally(function(){ btn.disabled=false; btn.textContent=label; });
+      });
+    }
+
   }
   if(document.readyState==='loading'){ document.addEventListener('DOMContentLoaded', init); } else { init(); }
 })();

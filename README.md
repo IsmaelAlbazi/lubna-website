@@ -47,9 +47,30 @@ python3 -m http.server 8000
 
 In Vercel → Project → **Settings → Domains**, add the restaurant's domain and follow the DNS instructions.
 
-## To do (waiting on client)
+## Reservation form
 
-- **Food photos** → un-hide the "Uit onze keuken" section (`id="gerechten"`, currently `display:none`) and gallery
-- **Facebook link** (block is commented out in the contact + footer — add the URL when found)
+The reservation form (contact section) POSTs to a Vercel serverless function at
+`api/reserveren.js`, which emails the reservation via [Resend](https://resend.com).
 
-Done: address, phone, opening hours, Instagram, TikTok.
+**Setup (once):**
+
+1. Create a free Resend account and an **API key**.
+2. In Vercel → Project → **Settings → Environment Variables**, add:
+   - `RESEND_API_KEY` — your Resend key
+   - `RESERVATION_TO` — the email address reservations should arrive at
+   - `RESERVATION_FROM` *(optional)* — a verified sender like `Lubna <reserveringen@yourdomain.nl>`.
+     Without a verified domain, Resend only delivers to your own account email (test mode).
+3. Redeploy (any push, or Vercel → Deployments → Redeploy).
+
+Until those vars are set, the form shows a friendly "bel ons" message instead of failing.
+
+*Simpler alternative:* swap the `<form>` to a no-backend service like Web3Forms (just an
+access key, no serverless function). Ask and it's a 5-minute change.
+
+## To do
+
+- **Reservation email** → set the env vars above once the target address is decided
+- **Food photos** → un-hide the "Uit onze keuken" section (`id="gerechten"`, currently `display:none`) and fill the Impressie gallery
+- Optional: custom domain, privacy/AVG note (form collects personal data), LocalBusiness SEO schema
+
+Done: address, phone, opening hours, Instagram, TikTok, Facebook, reservation form.

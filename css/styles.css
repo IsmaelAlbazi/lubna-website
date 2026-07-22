@@ -148,3 +148,25 @@ section{padding:clamp(64px,9vw,120px) 0;scroll-margin-top:66px}
 @keyframes fadeUp{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}@keyframes fadeIn{from{opacity:0}to{opacity:1}}@keyframes cueBob{0%,100%{transform:translate(-50%,0)}50%{transform:translate(-50%,7px)}}body{animation:fadeIn .5s ease both}.hero-logo{animation:fadeUp 1s .15s both}.hero .btns{animation:fadeUp 1s .6s both}.hero .scroll-cue{animation:fadeIn 1.2s 1.1s both,cueBob 2.4s 1.6s ease-in-out infinite}.reveal{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1)}.reveal.in{opacity:1;transform:none}.btn{transition:background .25s ease,color .25s ease,transform .2s ease}.btn:hover{transform:translateY(-2px)}.dish{transition:transform .3s ease,box-shadow .3s ease}@media(min-width:821px){.nav-links a:not(.btn){position:relative}.nav-links a:not(.btn)::after{content:"";position:absolute;left:0;bottom:-4px;width:0;height:1px;background:var(--gold);transition:width .25s ease}.nav-links a:not(.btn):hover::after{width:100%}}@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1!important;transform:none!important}}
 .nav-check{position:absolute;opacity:0;pointer-events:none}#navCheck:checked ~ .nav .nav-links{transform:translateX(0)}#navCheck:checked ~ .nav-scrim{opacity:1;visibility:visible}#navCheck:checked ~ .nav .nav-toggle span{background:#fff}#navCheck:checked ~ .nav .nav-toggle span:nth-child(1){transform:translateY(7px) rotate(45deg)}#navCheck:checked ~ .nav .nav-toggle span:nth-child(2){opacity:0}#navCheck:checked ~ .nav .nav-toggle span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
 .type-caret::after{content:"";display:inline-block;width:2px;height:.85em;background:var(--gold);margin-left:4px;vertical-align:-.06em;animation:caretBlink .65s steps(1) infinite}@keyframes caretBlink{50%{opacity:0}}
+/* ---- reservation form ---- */
+.rsv-form{margin-top:18px;text-align:left;display:flex;flex-direction:column;gap:12px}
+.rsv-hp{position:absolute!important;left:-9999px;width:1px;height:1px;opacity:0}
+.rsv-row{display:flex;gap:12px}
+.rsv-form input,.rsv-form select,.rsv-form textarea{width:100%;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.16);border-radius:3px;padding:12px 14px;color:#f0ead9;font-family:var(--sans);font-size:.95rem}
+.rsv-form input[type=date],.rsv-form input[type=time]{color-scheme:dark}
+.rsv-form input::placeholder,.rsv-form textarea::placeholder{color:#a59d8a}
+.rsv-form select{color:#a59d8a}
+.rsv-form select:valid{color:#f0ead9}
+.rsv-form option{color:#2c2a24}
+.rsv-form input:focus,.rsv-form select:focus,.rsv-form textarea:focus{outline:none;border-color:var(--gold);background:rgba(255,255,255,.09)}
+.rsv-form textarea{resize:vertical;min-height:44px}
+.rsv-note{font-size:.82rem;color:#cfc7b6;margin:-2px 0 2px}
+.rsv-note a{color:var(--gold)}
+.rsv-submit{margin-top:4px;width:100%;border:0;cursor:pointer}
+.rsv-submit:disabled{opacity:.6;cursor:default}
+.rsv-status{font-size:.9rem;margin:6px 0 0;min-height:1.1em}
+.rsv-status.ok{color:#9fd18a}
+.rsv-status.err{color:#e6a97a}
+.rsv-or{margin-top:14px;font-size:.9rem;color:#cfc7b6}
+.rsv-or a{color:var(--gold)}
+@media(max-width:520px){.rsv-row{flex-direction:column}}
